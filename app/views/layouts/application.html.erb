@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Omacinema</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= action_cable_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <!--     <link href='node_modules/@fullcalendar/core/main.css' rel='stylesheet' />
+      <link href='node_modules/@fullcalendar/timegrid/main.css' rel='stylesheet' />
+    -->
+    <%= stylesheet_pack_tag 'application', media: 'all' %>
+    <title>Ōma cinema</title>
+     <link href="/assets/favicon.ico" rel="shortcut icon" type="image/x-icon" />
   </head>
 
   <body>
+    <%= render 'shared/navbar' %>
     <%= yield %>
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_pack_tag 'application' %>
   </body>
 </html>

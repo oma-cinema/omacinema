@@ -2,6 +2,13 @@
   "name": "omacinema",
   "private": true,
   "dependencies": {
-    "bootstrap": "^4.3.1"
+    "@rails/webpacker": "^4.0.7",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "jquery-bar-rating": "^1.2.2",
+    "popper.js": "^1.15.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.7.2"
   }
 }
